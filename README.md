@@ -1,1 +1,37 @@
-"# vote" 
+# 根据客户端ip进行投票
+
+### 安装
+```shell
+composer require "zyg/vote"
+```
+
+### 使用
+```php
+<?php
+
+use Zyg\Vote\VoteFacade;
+
+include_once "vendor/autoload.php";
+
+$config = [
+    "ip_nums"=>5 //每个ip可投票次数
+];
+
+try
+{
+    $vote = new VoteFacade($config);
+}
+catch (Exception $e)
+{
+}
+if(VoteFacade::checkCan())
+{
+    VoteFacade::setNum();
+    // 成功
+}
+else
+{
+    // 失败，投票次数已经用尽
+}
+
+```

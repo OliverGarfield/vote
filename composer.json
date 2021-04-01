@@ -8,6 +8,11 @@
             "Zyg\\Vote\\": "src/"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "Zyg\\Vote\\": "tests/"
+        }
+    },
     "authors": [
         {
             "name": "zhouyuguang",
@@ -16,6 +21,8 @@
     ],
     "require": {
         "php":">=7.1.0",
-        "doctrine/cache": "1.10.*"
+        "doctrine/cache": "1.10.*",
+        "vectorface/whip": "^0.4.0",
+        "ext-json": "*"
     }
 }
