@@ -1,0 +1,21 @@
+{
+    "name": "zyg/vote",
+    "description": "投票类",
+    "keywords": ["vite", "php-vite"],
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Zyg\\Vote\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "zhouyuguang",
+            "email": "zhouyuguang100@outlook.com"
+        }
+    ],
+    "require": {
+        "php":">=7.1.0",
+        "doctrine/cache": "1.10.*"
+    }
+}
