@@ -73,7 +73,7 @@ class VoteFacade
      * @param $channel
      * @return string
      */
-    public function getChannel($channel)
+    public static function getChannel($channel)
     {
         if($channel) return $channel;
 
