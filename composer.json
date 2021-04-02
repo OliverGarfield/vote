@@ -1,7 +1,7 @@
 {
     "name": "zyg/vote",
     "description": "投票类",
-    "keywords": ["vite", "php-vite"],
+    "keywords": ["vote", "php-vote"],
     "license": "MIT",
     "autoload": {
         "psr-4": {
