@@ -2,7 +2,7 @@
 
 ### 安装
 ```shell
-composer require "zyg/vote"
+composer require zyg/vote
 ```
 
 ### 使用
