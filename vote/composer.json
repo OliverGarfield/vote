@@ -1,0 +1,28 @@
+{
+    "name": "OliverGarfield/vote",
+    "description": "投票类",
+    "keywords": ["vote", "php-vote"],
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "OliverGarfield\\Vote\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "OliverGarfield\\Vote\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "OliverGarfield",
+            "email": "zhouyuguang100@outlook.com"
+        }
+    ],
+    "require": {
+        "php":">=7.1.0",
+        "doctrine/cache": "1.10.*",
+        "vectorface/whip": "^0.4.0",
+        "ext-json": "*"
+    }
+}
