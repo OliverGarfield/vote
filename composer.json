@@ -2,6 +2,7 @@
     "name": "oliver-garfield/vote",
     "description": "投票类",
     "keywords": ["vote", "php-vote"],
+    "type": "library",
     "license": "MIT",
     "autoload": {
         "psr-4": {
