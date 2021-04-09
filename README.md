@@ -2,7 +2,7 @@
 
 ### 安装
 ```shell
-composer require OliverGarfield/vote
+composer require oliver-garfield/vote
 ```
 
 ### 使用
