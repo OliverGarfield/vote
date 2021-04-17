@@ -8,7 +8,6 @@ use Vectorface\Whip\Whip;
 
 class VoteFacade
 {
-
     /**
      * @var array
      */
