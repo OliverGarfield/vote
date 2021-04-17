@@ -33,10 +33,17 @@ class VoteFacade
      * @param $channel
      * @return bool
      */
-    public static function checkCan($channel="")
+    public static function checkCan($channel="",$otherKey="")
     {
         $channel = self::getChannel($channel);
-        $clientAddress = self::getClientIP();
+        if($otherKey)
+        {
+            $clientAddress = $otherKey;
+        }
+        else
+        {
+            $clientAddress = self::getClientIP();
+        }
         $cache = new Cache(array_key_exists("cache",self::$config)?self::$config["cache"]:'');
         $cache = $cache::init();
         $lists = json_decode($cache->fetch(Cache::getKeyName($channel)),true) ?? [];
@@ -50,10 +57,17 @@ class VoteFacade
     /**
      * @param $channel
      */
-    public static function setNum($channel="")
+    public static function setNum($channel="",$otherKey="")
     {
         $channel = self::getChannel($channel);
-        $clientAddress = self::getClientIP();
+        if($otherKey)
+        {
+            $clientAddress = $otherKey;
+        }
+        else
+        {
+            $clientAddress = self::getClientIP();
+        }
         $cache = new Cache(array_key_exists("cache",self::$config)?self::$config["cache"]:'');
         $cache = $cache::init();
         $lists = json_decode($cache->fetch(Cache::getKeyName($channel)),true) ?? [];
